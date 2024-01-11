@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Variables</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='href'>
+    <script src='main.js'></script>
+</head>
+
+    <style>
+        :root{
+            --bgcolor :hsl(0, 90%, 26%);
+            --hbgcolor: rgb(196, 231, 19);
+            --h1color : rgb(158, 158, 51);
+            --h2color : rgb(0, 255, 145);
+            --pcolor : rgb(0, 255, 183);
+            --pbg : rgb(108, 58, 130);
+        }
+
+        body{
+            background-color: var(--bgcolor)
+        }
+
+        h1{
+            color: var(--h1color);
+            background-color: var(--hbgcolor);
+        }
+        h2{
+            color: var(--h2color);
+        }
+        p{
+            color: var(--pcolor);
+        }
+
+    </style>
+
+<body>
+    <!--  The var() function is used to insert the value of a CSS variable.-->
+
+    <!--    ->  Complex websites have very large amounts of CSS, and this often results in a lot of repeated CSS values. 
+
+            ->  For example, it's common to see the same color used in hundreds of different places in stylesheets. 
+
+            ->  Changing a color that's been duplicated in many places requires a search and replace across all rules and CSS files. 
+
+            ->  Custom properties allow a value to be defined in one place, then referenced in multiple other places so that it's easier to work with. 
+
+            ->  Another benefit is readability and semantics. 
+
+            ->  For example, --main-text-color is easier to understand than the hexadecimal color #00ff00, especially if the color is used in different contexts.
+        
+        -->
+
+
+    <!--    section {
+                --main-bg-color: brown;
+            }           
+    -->
+
+    <h1>Example od CSS Variable</h1>
+
+    <h2>The var() function is used to insert the value of a CSS variable.</h2>
+
+    <p>->  Complex websites have very large amounts of CSS, and this often results in a lot of repeated CSS values. 
+
+        ->  For example, it's common to see the same color used in hundreds of different places in stylesheets. 
+
+        ->  Changing a color that's been duplicated in many places requires a search and replace across all rules and CSS files. 
+
+        ->  Custom properties allow a value to be defined in one place, then referenced in multiple other places so that it's easier to work with. 
+
+        ->  Another benefit is readability and semantics. 
+
+        ->  For example, --main-text-color is easier to understand than the hexadecimal color #00ff00, especially if the color is used in different contexts.</p>
+
+        <h1>Lorem ipsum dolor sit amet.</h1>
+</body>
+</html>
