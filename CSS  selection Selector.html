@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS ::selection Selector</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+        /* Make selected text gold on a red background */
+            ::selection {
+            color: gold;
+            background-color: red;
+            }
+
+            /* Make selected text in a paragraph white on a blue background */
+            p::selection {
+            color: rgb(43, 0, 255);
+            background-color: rgb(255, 0, 238);
+            }
+    </style>
+</head>
+<body>
+    <!--    ::selection
+       
+        ->  The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).
+    
+            ==> Allowable properties   <==
+            
+            ->  Only certain CSS properties can be used with ::selection:
+
+            ->  color
+            ->  background-color
+            ->  text-decoration and its associated properties
+            ->  text-shadow
+            ->  -webkit-text-stroke-color, -webkit-text-fill-color and -webkit-text-stroke-width
+    -->
+
+
+    <!-- Example ox ::selection Selctor -->
+
+    <p>Also try selecting text in this paragraph.</p>
+
+    <h1>::selection selector</h1>
+
+    <h3> The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).</h3>
+    <p>  Allowable properties  
+            
+        ->  Only certain CSS properties can be used with ::selection:
+
+        ->  color
+        ->  background-color
+        ->  text-decoration and its associated properties
+        ->  text-shadow
+        ->  -webkit-text-stroke-color, -webkit-text-fill-color and -webkit-text-stroke-width</p>
+</body>
+</html>
